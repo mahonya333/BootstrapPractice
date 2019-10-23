@@ -12,20 +12,13 @@ a{
 }
 ul,
 li{
-    display: inline-block;
-    margin: 0;
     padding: 0;
-    list-style: none;
+    margin: 0;
+    display: block;
 }
 body{
-    font-family: 'Calibri', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    color: #fff;
+    background-color: grey;
 }
 .container{
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 40px;
+
 }

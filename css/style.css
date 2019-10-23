@@ -15,22 +15,46 @@ a {
 
 ul,
 li {
-  display: inline-block;
-  margin: 0;
   padding: 0;
-  list-style: none;
+  margin: 0;
+  display: block;
 }
 
 body {
-  font-family: 'Calibri', sans-serif;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  color: #fff;
+  background-color: grey;
 }
 
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 40px;
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}
+.header {
+  background-color: #fff;
+  color: #212121;
+  padding: 50px 0;
+}
+
+.menu__item a {
+  font-family: 'Open sans SemiBold';
+  font-size: 20px;
+  color: #212121;
+}
+.menu__item a:hover {
+  color: #00897b;
+  text-decoration: none;
+}
+.menu__item + .menu__item {
+  margin-left: 37px;
 }

@@ -1,7 +1,27 @@
 @import '_global';
 @import '_vars';
+@import '_fonts';
 
 
+.header{
+    background-color: #fff;
+    color: #212121;
+    padding: 50px 0;
+}
+.menu__item{
+    a{
+        font-family: 'Open sans SemiBold';
+        font-size: 20px;
+        color: #212121;
+        &:hover{
+            color: #00897b;
+            text-decoration: none;
+        }
+    }
+    & + .menu__item{
+        margin-left: 37px;
+    }
+}
 
 
 // header start
