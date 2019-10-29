@@ -9,48 +9,551 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+    <div class="toTop icon-arrow-up"></div>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-2 align-self-center">
-                    <img src="images/logo.png" alt="logo" class="logo">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 align-self-center logo-bar">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                        <div class="icon-menu burger-menu"></div>
+                    </div>
+                    <div class="col-xl-8 ml-auto align-self-center">
+                        <nav>
+                            <ul class="menu d-flex justify-content-end">
+                                <li class="menu__item"><a href="#">Home</a></li>
+                                <li class="menu__item"><a href="#about">About</a></li>
+                                <li class="menu__item"><a href="#services">Servicing</a></li>
+                                <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+                                <li class="menu__item"><a href="#blog">Blog</a></li>
+                                <li class="menu__item"><a href="#contact">Contact us</a></li>
+                                <li class="menu__item"><a href="#"><i class="icon-search"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="col-xl-8 ml-auto align-self-center">
-                    <nav>
-                        <ul class="menu d-flex justify-content-end">
-                            <li class="menu__item"><a href="#">Home</a></li>
-                            <li class="menu__item"><a href="#">About</a></li>
-                            <li class="menu__item"><a href="#">Servicing</a></li>
-                            <li class="menu__item"><a href="#">Portfolio</a></li>
-                            <li class="menu__item"><a href="#">Blog</a></li>
-                            <li class="menu__item"><a href="#">Contact us</a></li>
-                            <li class="menu__item"><i class="icon-search"></i></li>
-                        </ul>
-                    </nav>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h1 class="header__title">Web development project</h1>
+                        <div class="header__text">Very suitable to support all web development projects</div>
+                        <button class="button">OUR SERVICES</button>
+                        <button class="button">HIRE IS NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h3 class="about__title title">About Us</h3>
+                    <div class="about__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-3 col-md-6">
+                    <img src="images/planet.png" alt="" class="about__img">
+                    <h4 class="about__info-title">Awesome Icons</h4>
+                    <div class="about__info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <img src="images/transfer.png" alt="" class="about__img">
+                    <h4 class="about__info-title">One Page</h4>
+                    <div class="about__info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <img src="images/head.png" alt="" class="about__img">
+                    <h4 class="about__info-title">Fully Responsive</h4>
+                    <div class="about__info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h3 class="services__title title">Our Services</h3>
+                    <div class="services__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-4 col-md-6">
+                    <div class="services__card">
+                        <img src="images/smartphone-black.png" alt="" class="about__img">
+                        <h4 class="about__info-title">Awesome Icons</h4>
+                        <div class="about__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <a class='services__link'>read more</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="services__card">
+                        <img src="images/smartphone-black.png" alt="" class="about__img">
+                        <h4 class="about__info-title">Portfolio</h4>
+                        <div class="about__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <a class='services__link'>read more</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="services__card">
+                        <img src="images/smartphone-black.png" alt="" class="about__img">
+                        <h4 class="about__info-title">Supports</h4>
+                        <div class="about__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <a class='services__link'>read more</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="services__card">
+                        <img src="images/smartphone-black.png" alt="" class="about__img">
+                        <h4 class="about__info-title">Documentation</h4>
+                        <div class="about__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <a class='services__link'>read more</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="services__card">
+                        <img src="images/smartphone-black.png" alt="" class="about__img">
+                        <h4 class="about__info-title">Development</h4>
+                        <div class="about__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <a class='services__link'>read more</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="services__card">
+                        <img src="images/smartphone-black.png" alt="" class="about__img">
+                        <h4 class="about__info-title">Design</h4>
+                        <div class="about__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <a class='services__link'>read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div cl ass="col-xl-8">
+                    <h3 class="portfolio__title title">Latest Works</h3>
+                    <div class="portfolio__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                    <button class="button focused" val="on" filter="all">ALL</button>
+                    <button class="button" val="off" filter="wd">WEB DESIGN</button>
+                    <button class="button" val="off" filter="ud">UI/UX DESIGN</button>
+                    <button class="button" val="off" filter="moc">MOCKUPS</button>
+                </div>
+            </div>
+            <div class="row portfolio__filter">
+                <div class="col-xl-4 col-md-6" filter="wd">
+                    <img src="images/item1.jpg" alt="">
+                    <div class="item__content">
+                        <h5 class="item__content-title">Hand Watch</h5>
+                        <div class="item__content-text">web design</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6" filter="moc">
+                    <img src="images/item2.jpg" alt="">
+                    <div class="item__content">
+                        <h5 class="item__content-title">One Day Pass</h5>
+                        <div class="item__content-text">mockups</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6" filter="wd">
+                    <img src="images/item3.jpg" alt="">
+                    <div class="item__content">
+                        <h5 class="item__content-title">Modal T-shirt</h5>
+                        <div class="item__content-text">web design</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6" filter="moc">
+                    <img src="images/item4.jpg" alt="">
+                    <div class="item__content">
+                        <h5 class="item__content-title">Flash</h5>
+                        <div class="item__content-text">mockups</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6" filter="ud">
+                    <img src="images/item5.jpg" alt="">
+                    <div class="item__content">
+                        <h5 class="item__content-title">Eplemost</h5>
+                        <div class="item__content-text">ui/ux design</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6" filter="ud">
+                    <img src="images/item6.jpg" alt="">
+                    <div class="item__content">
+                        <h5 class="item__content-title">The Kitchens</h5>
+                        <div class="item__content-text">ui/ux design</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <button class="button focused" val="on" filter="all">VIEW ALL</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h3 class="portfolio__title title">Latest Works</h3>
+                    <div class="portfolio__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item-price">
+                            Free Trail <br>
+                            <span><sup>$</sup>00<sub>per month</sub></span>
+                        </div>
+                        <div class="pricing__item-list">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__item-link">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item-price">
+                            Basic <br>
+                            <span><sup>$</sup>50<sub>per month</sub></span>
+                        </div>
+                        <div class="pricing__item-list">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__item-link">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item-price">
+                            Ultimates <br>
+                            <span><sup>$</sup>99<sub>per month</sub></span>
+                        </div>
+                        <div class="pricing__item-list">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__item-link">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class=" row justify-content-center">
+                <div class="col-xl-8">
+                    <h3 class="team__title title">Our Team Member</h3>
+                    <div class="team__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+            </div>
+            <div class="row team-slider justify-content-around">
+                <div class="col-xl-4 col-lg-4 team__item">
+                    <img src="images/team1.jpg" alt="team">
+                    <div class="team__item-name">
+                        John Doe
+                    </div>
+                    <div class="team__item-position">
+                        General Manager
+                    </div>
+                    <div class="team__item-socials d-flex justify-content-center">
+                        <a href="#" class="icon-facebook team__icon-link"></a>
+                        <a href="#" class="icon-twitter team__icon-link"></a>
+                        <a href="#" class="icon-comments team__icon-link"></a>
+                        <a href="#" class="icon-dribbble team__icon-link"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 team__item">
+                    <img src="images/team2.jpg" alt="team">
+                    <div class="team__item-name">
+                        John Doe
+                    </div>
+                    <div class="team__item-position">
+                        General Manager
+                    </div>
+                    <div class="team__item-socials d-flex justify-content-center">
+                        <a href="#" class="icon-facebook team__icon-link"></a>
+                        <a href="#" class="icon-twitter team__icon-link"></a>
+                        <a href="#" class="icon-comments team__icon-link"></a>
+                        <a href="#" class="icon-dribbble team__icon-link"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 team__item">
+                    <img src="images/team3.jpg" alt="team">
+                    <div class="team__item-name">
+                        John Doe
+                    </div>
+                    <div class="team__item-position">
+                        General Manager
+                    </div>
+                    <div class="team__item-socials d-flex justify-content-center">
+                        <a href="#" class="icon-facebook team__icon-link"></a>
+                        <a href="#" class="icon-twitter team__icon-link"></a>
+                        <a href="#" class="icon-comments team__icon-link"></a>
+                        <a href="#" class="icon-dribbble team__icon-link"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 team__item">
+                    <img src="images/team1.jpg" alt="team">
+                    <div class="team__item-name">
+                        John Doe
+                    </div>
+                    <div class="team__item-position">
+                        General Manager
+                    </div>
+                    <div class="team__item-socials d-flex justify-content-center">
+                        <a href="#" class="icon-facebook team__icon-link"></a>
+                        <a href="#" class="icon-twitter team__icon-link"></a>
+                        <a href="#" class="icon-comments team__icon-link"></a>
+                        <a href="#" class="icon-dribbble team__icon-link"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 team__item">
+                    <img src="images/team2.jpg" alt="team">
+                    <div class="team__item-name">
+                        John Doe
+                    </div>
+                    <div class="team__item-position">
+                        General Manager
+                    </div>
+                    <div class="team__item-socials d-flex justify-content-center">
+                        <a href="#" class="icon-facebook team__icon-link"></a>
+                        <a href="#" class="icon-twitter team__icon-link"></a>
+                        <a href="#" class="icon-comments team__icon-link"></a>
+                        <a href="#" class="icon-dribbble team__icon-link"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 team__item">
+                    <img src="images/team3.jpg" alt="team">
+                    <div class="team__item-name">
+                        John Doe
+                    </div>
+                    <div class="team__item-position">
+                        General Manager
+                    </div>
+                    <div class="team__item-socials d-flex justify-content-center">
+                        <a href="#" class="icon-facebook team__icon-link"></a>
+                        <a href="#" class="icon-twitter team__icon-link"></a>
+                        <a href="#" class="icon-comments team__icon-link"></a>
+                        <a href="#" class="icon-dribbble team__icon-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h3 class="blog__title title">Blog</h3>
+                    <div class="blog__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+            </div>
+            <div class="row blog__content-right">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog__img" style="background-image: url(images/blog1.jpg);">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog__content">
+                        <div class="blog__content-title"><a href="#">SEO Quis Vestibulum</a></div>
+                        <div class="blog__content-date">14.0702017</div>
+                        <div class="blog__content-branch">Development</div>
+                        <div class="blog__content-text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row blog__content-left">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog__content ">
+                        <div class="blog__content-title"><a href="#">SEO Quis Vestibulum</a></div>
+                        <div class="blog__content-date">14.0702017</div>
+                        <div class="blog__content-branch">Development</div>
+                        <div class="blog__content-text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat...
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog__img" style="background-image: url(images/blog2.jpg);"></div>
+                </div>
+            </div>
+            <div class="row blog__content-right">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog__img" style="background-image: url(images/blog3.jpg);"></div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                    <div class="blog__content ">
+                        <div class="blog__content-title"><a href="#">SEO Quis Vestibulum</a></div>
+                        <div class="blog__content-date">14.0702017</div>
+                        <div class="blog__content-branch">Development</div>
+                        <div class="blog__content-text">
+                            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <a class="blog__link" href="#">MORE VIEW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h3 class="contact__title title">Contact Us</h3>
+                    <div class="contact__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-md-6">
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="images/map.png" alt="">
+                        </div>
+                        <div class="contact__item-info">
+                            Nobinagar savar,Dhaka Bangladesh
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="images/phone.png" alt="">
+                        </div>
+                        <div class="contact__item-info">
+                            <a href="tel:8801743331996">+8801743331996</a>
+                            <a href="tel:8801928737807">+8801928737807</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="images/mail.png" alt="">
+                        </div>
+                        <div class="contact__item-info">
+                            quickmasud@gmail.com
+                            quickmasud@yahoo.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <form action="#" class="contact__form">
+                    <div class="col-xl-5"><input type="text" required placeholder="Your NAME"></div>
+                    <div class="col-xl-5"><input type="email" required placeholder="Your Email"></div>
+                    <div class="col-xl-10"><textarea placeholder="Write Massage"></textarea></div>
+                    <div class="col-xl-2 offset-xl-7"><button type="submit">Send</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="footer__copy">
+                        All rights Reserved © 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

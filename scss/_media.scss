@@ -1,0 +1,127 @@
+@media (max-width: 1200px){
+    nav{
+        display: none;
+    }
+    .logo-bar{
+        .burger-menu{
+            display: block;
+        }
+    }
+    .pricing__item{
+        margin-bottom: 20px;
+    }
+    .team__item{
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .contact__item{
+        margin: 0 auto;
+    }
+    .contact__form{
+        input,
+        textarea{
+            margin-bottom: 20px;
+        }
+        textarea{
+            margin-top: 0;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .blog__content-title a{
+        margin-bottom: 15px;
+    }
+    .portfolio__filter{
+        padding-bottom: 15px;
+    }
+    .blog__content-text{
+        margin-top: 15px;
+    }
+    .blog__link{
+        margin-top: 75px;
+    }
+    .blog__content{
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 950px){
+    .blog__link{
+        margin-top: 25px;
+    }
+}
+@media (max-width: 768px){
+    .about__info-text{
+        margin-bottom: 40px;
+    }
+    .about__img{
+        margin-bottom: 20px;
+    }
+    .dots-style{
+        margin-top: 51px;
+    }
+    .blog__img{
+        min-height: 300px;
+    }
+    .blog__content-left{
+        div:first-child{
+            order: 2;
+        }
+    }
+    .blog__content{
+        padding-left: 0;
+        padding-bottom: 35px;
+        padding-top: 15px;
+    }
+}
+@media (max-width: 768px){
+    .header__title{
+        font-size: 40px;
+    }
+    .button{
+        width: 100%;
+        max-width: 220px;
+    }
+    .header__top{
+        padding: 25px 0px;
+    }
+    .header__text{
+        margin-bottom: 60px;
+    }
+    .about,
+    .services,
+    .portfolio,
+    .pricing,
+    .team,
+    .blog,
+    .contact{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .contact__form textarea{
+        height: 250px;
+    }
+}
+@media (max-width: 450px){
+    .title{
+        font-size: 25px;
+    }
+    .header__content{
+        padding: 140px 0px;
+    }
+    .header__title{
+        font-size: 30px;
+    }
+    .contact__form input, 
+    .contact__form textarea{
+        padding: 15px;
+    }
+}
+@media (min-width: 1201px){
+    nav{
+        display: block;
+    }
+}
